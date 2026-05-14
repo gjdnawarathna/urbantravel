@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg transition-all transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-white/20 hover:bg-white/30 text-white font-bold rounded-lg transition-all border-2 border-white backdrop-blur-sm;
+  }
+
+  .section-header {
+    @apply text-4xl md:text-5xl font-bold text-gray-900 mb-4;
+  }
+
+  .section-subheader {
+    @apply text-xl text-gray-600 max-w-2xl mx-auto;
+  }
+
+  .card-hover {
+    @apply transform transition-all hover:scale-105 shadow-lg hover:shadow-2xl;
+  }
+
+  .gradient-orange {
+    @apply bg-gradient-to-r from-orange-500 to-orange-600;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove scrollbar on Chrome/Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ea580c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9420a;
+}
