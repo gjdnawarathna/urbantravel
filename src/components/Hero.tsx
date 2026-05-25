@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
+import waterfallImg from '../../image/water fall.jpg';
+import banner1Img from '../../image/banner1.jpeg';
 
 export default function Hero() {
   const [bgIndex, setBgIndex] = useState(0);
 
   const backgroundImages = [
-    'https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg',
+    waterfallImg,
+    banner1Img,
     'https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg',
     'https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg',
   ];
