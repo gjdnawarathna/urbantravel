@@ -15,9 +15,9 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-orange-600 to-orange-700">
+    <section className="py-16 bg-gradient-to-r from-orange-600 to-orange-700 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <div className="text-center liquid-glass-dark rounded-3xl p-8 md:p-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Get Your Free Travel Plan
           </h2>
@@ -26,7 +26,7 @@ export default function Newsletter() {
           </p>
 
           {submitted ? (
-            <div className="inline-block px-6 py-3 bg-white rounded-lg">
+            <div className="inline-block px-6 py-3 liquid-glass-btn text-orange-600">
               <p className="text-orange-600 font-semibold flex items-center gap-2">
                 <svg
                   className="w-5 h-5"
@@ -50,11 +50,11 @@ export default function Newsletter() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="flex-1 liquid-glass-field text-gray-900 placeholder:text-gray-500"
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-white text-orange-600 font-bold rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+                className="px-6 py-3 liquid-glass-btn text-orange-600 flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 <Mail size={18} />
                 <span className="hidden sm:inline">Subscribe</span>

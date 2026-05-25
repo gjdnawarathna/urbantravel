@@ -50,7 +50,7 @@ export default function Hero() {
           <img
             src="/WhatsApp_Image_2026-05-06_at_1.49.48_PM.jpeg"
             alt="Urban Travels"
-            className="h-24 w-24 rounded-full mx-auto shadow-2xl border-4 border-orange-400 object-cover"
+            className="h-24 w-24 rounded-full mx-auto shadow-2xl border-4 border-white/60 object-cover liquid-glass-frame"
           />
         </div>
 
@@ -79,7 +79,7 @@ export default function Hero() {
           </a>
           <a
             href="#tours"
-            className="px-8 py-4 bg-white/20 hover:bg-white/30 text-white text-lg font-bold rounded-lg transition-all border-2 border-white backdrop-blur-sm"
+            className="px-8 py-4 liquid-glass-hero text-white text-lg"
           >
             View Packages
           </a>

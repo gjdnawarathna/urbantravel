@@ -120,8 +120,8 @@ export default function Gallery() {
               onClick={() => setSelectedCategory(category)}
               className={`px-4 py-2 rounded-full font-semibold transition-all capitalize ${
                 selectedCategory === category
-                  ? 'bg-orange-600 text-white'
-                  : 'bg-white/60 backdrop-blur text-gray-800 hover:bg-white/80 border border-orange-100/50'
+                  ? 'liquid-glass-chip liquid-glass-chip-active'
+                  : 'liquid-glass-chip text-gray-800 hover:bg-white/70'
               }`}
             >
               {category}
@@ -135,7 +135,7 @@ export default function Gallery() {
             <button
               key={image.id}
               onClick={() => setSelectedImage(image)}
-              className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer transform transition-all hover:scale-105 shadow-lg hover:shadow-2xl"
+              className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer transform transition-all hover:scale-105 liquid-glass-frame"
             >
               <div
                 className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform"
@@ -160,16 +160,16 @@ export default function Gallery() {
         {/* Lightbox */}
         {selectedImage && (
           <div
-            className="fixed inset-0 bg-black/80 backdrop-blur z-50 flex items-center justify-center p-4 animate-fadeIn"
+            className="fixed inset-0 bg-black/50 backdrop-blur-xl z-50 flex items-center justify-center p-4 animate-fadeIn"
             onClick={() => setSelectedImage(null)}
           >
             <div
-              className="max-w-4xl w-full"
+              className="max-w-4xl w-full liquid-glass-modal p-4 relative"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors bg-black/30 p-2 rounded-lg"
+                className="absolute top-6 right-6 z-10 liquid-glass-chip p-2 text-gray-700 hover:scale-105"
               >
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                   <path
@@ -189,9 +189,9 @@ export default function Gallery() {
                 }}
               />
 
-              <div className="mt-4 text-center text-white">
-                <h3 className="text-2xl font-bold">{selectedImage.title}</h3>
-                <p className="text-gray-400 capitalize mt-1">
+              <div className="mt-4 text-center relative z-[1]">
+                <h3 className="text-2xl font-bold text-gray-900">{selectedImage.title}</h3>
+                <p className="text-gray-600 capitalize mt-1">
                   {selectedImage.category}
                 </p>
               </div>

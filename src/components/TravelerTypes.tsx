@@ -78,8 +78,8 @@ export default function TravelerTypes({ onSelect }: TravelerTypesProps) {
             <button
               key={type.id}
               onClick={() => handleSelect(type.id)}
-              className={`group relative h-80 rounded-2xl overflow-hidden transition-all transform hover:scale-105 cursor-pointer ${
-                selected === type.id ? 'ring-4 ring-orange-400' : ''
+              className={`group relative h-80 rounded-2xl overflow-hidden transition-all transform hover:scale-105 cursor-pointer liquid-glass-frame ${
+                selected === type.id ? 'ring-4 ring-orange-400 ring-offset-2 ring-offset-orange-50' : ''
               }`}
             >
               {/* Background Gradient */}

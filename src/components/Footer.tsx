@@ -2,8 +2,10 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-gray-900 text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-800/50 to-gray-900 pointer-events-none" aria-hidden />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="liquid-glass-dark rounded-3xl p-8 md:p-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
@@ -11,7 +13,7 @@ export default function Footer() {
               <img
                 src="/WhatsApp_Image_2026-05-06_at_1.49.48_PM.jpeg"
                 alt="Urban Travels"
-                className="h-12 w-12 rounded-full object-cover"
+                className="h-12 w-12 rounded-full object-cover liquid-glass-frame"
               />
               <div>
                 <p className="font-bold text-lg">Urban Travels</p>
@@ -96,7 +98,7 @@ export default function Footer() {
                 href="https://www.facebook.com/share/1J5kg9eUAm/ceylon_urban_travels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-orange-600 hover:bg-orange-700 p-3 rounded-lg transition-colors"
+                className="liquid-glass-dark hover:bg-white/20 p-3 rounded-xl transition-all text-orange-400"
               >
                 <Facebook size={20} />
               </a>
@@ -104,7 +106,7 @@ export default function Footer() {
                 href="https://www.instagram.com/ceylon_urban_travels?igsh=MTA3Ym9udnFlYXkwaw=="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-orange-600 hover:bg-orange-700 p-3 rounded-lg transition-colors"
+                className="liquid-glass-dark hover:bg-white/20 p-3 rounded-xl transition-all text-orange-400"
               >
                 <Instagram size={20} />
               </a>
@@ -112,7 +114,7 @@ export default function Footer() {
                 href="https://twitter.com/urbantravels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-orange-600 hover:bg-orange-700 p-3 rounded-lg transition-colors"
+                className="liquid-glass-dark hover:bg-white/20 p-3 rounded-xl transition-all text-orange-400"
               >
                 <Twitter size={20} />
               </a>
@@ -133,6 +135,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </footer>

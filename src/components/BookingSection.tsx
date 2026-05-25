@@ -48,7 +48,7 @@ export default function BookingSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Info */}
-          <div className="text-white">
+          <div className="text-white liquid-glass-dark rounded-3xl p-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Start Your Sri Lanka Adventure
             </h2>
@@ -59,7 +59,7 @@ export default function BookingSection() {
             {/* Quick Info */}
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center flex-shrink-0">
+                <div className="liquid-glass-icon w-12 h-12 text-orange-400">
                   <Phone size={24} />
                 </div>
                 <div>
@@ -74,7 +74,7 @@ export default function BookingSection() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center flex-shrink-0">
+                <div className="liquid-glass-icon w-12 h-12 text-orange-400">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -89,7 +89,7 @@ export default function BookingSection() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center flex-shrink-0">
+                <div className="liquid-glass-icon w-12 h-12 text-orange-400">
                   <Calendar size={24} />
                 </div>
                 <div>
@@ -103,7 +103,7 @@ export default function BookingSection() {
           </div>
 
           {/* Right Side - Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-2xl">
+          <div className="liquid-glass-elevated p-8">
             {submitted ? (
               <div className="text-center py-12">
                 <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
@@ -139,7 +139,7 @@ export default function BookingSection() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                    className="liquid-glass-field"
                     placeholder="Your name"
                   />
                 </div>
@@ -155,7 +155,7 @@ export default function BookingSection() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                    className="liquid-glass-field"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -171,7 +171,7 @@ export default function BookingSection() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                    className="liquid-glass-field"
                     placeholder="+94 XXX XXX XXX"
                   />
                 </div>
@@ -186,7 +186,7 @@ export default function BookingSection() {
                       name="travelers"
                       value={formData.travelers}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                      className="liquid-glass-field"
                     >
                       {[1, 2, 3, 4, 5, 6, '7+'].map((num) => (
                         <option key={num} value={num}>
@@ -205,7 +205,7 @@ export default function BookingSection() {
                       value={formData.startDate}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                      className="liquid-glass-field"
                     />
                   </div>
                 </div>
@@ -219,7 +219,7 @@ export default function BookingSection() {
                     name="packageType"
                     value={formData.packageType}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                    className="liquid-glass-field"
                   >
                     <option value="custom">Custom Itinerary</option>
                     <option value="adventure">Adventure Package</option>
@@ -239,7 +239,7 @@ export default function BookingSection() {
                     value={formData.specialRequests}
                     onChange={handleChange}
                     rows={3}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                    className="liquid-glass-field"
                     placeholder="Any special interests or requirements?"
                   />
                 </div>

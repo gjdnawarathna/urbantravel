@@ -134,17 +134,17 @@ export default function TourPackages() {
         {/* Detail Modal */}
         {selectedPackage && (
           <div
-            className="fixed inset-0 bg-black/50 backdrop-blur z-50 flex items-center justify-center p-4 animate-fadeIn"
+            className="fixed inset-0 bg-black/40 backdrop-blur-md z-50 flex items-center justify-center p-4 animate-fadeIn"
             onClick={() => setSelectedPackage(null)}
           >
             <div
-              className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+              className="liquid-glass-modal max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
               <button
                 onClick={() => setSelectedPackage(null)}
-                className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-lg"
+                className="absolute top-4 right-4 p-2 liquid-glass-chip hover:scale-105 z-10"
               >
                 <svg
                   className="w-6 h-6"

@@ -72,7 +72,7 @@ export default function Destinations() {
             return (
             <div
               key={dest.id}
-              className="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer transform transition-all hover:scale-105 shadow-lg hover:shadow-2xl"
+              className="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer transform transition-all hover:scale-105 liquid-glass-frame"
             >
               {/* Image */}
               <div
