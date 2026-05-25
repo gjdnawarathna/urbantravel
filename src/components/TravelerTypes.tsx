@@ -58,11 +58,10 @@ export default function TravelerTypes({ onSelect }: TravelerTypesProps) {
   };
 
   return (
-    <section
-      id="traveler-types"
-      className="py-20 bg-gradient-to-b from-gray-50 to-white"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="traveler-types" className="section-surface section-warm">
+      <div className="section-blob-orange" aria-hidden />
+      <div className="section-blob-teal" aria-hidden />
+      <div className="section-inner">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

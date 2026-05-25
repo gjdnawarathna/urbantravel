@@ -29,8 +29,8 @@ export default function Testimonials() {
 
   if (loading) {
     return (
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="section-surface section-teal">
+        <div className="section-inner text-center">
           <p className="text-gray-500">Loading testimonials...</p>
         </div>
       </section>
@@ -38,8 +38,9 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section-surface section-teal">
+      <div className="section-blob-orange" aria-hidden />
+      <div className="section-inner">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -55,7 +56,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow group"
+              className="glass-card rounded-xl p-6 transition-shadow group"
             >
               {/* Stars */}
               <div className="flex gap-1 mb-4">

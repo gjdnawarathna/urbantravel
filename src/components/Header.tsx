@@ -28,7 +28,7 @@ export default function Header() {
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white shadow-lg'
+          ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-orange-100/50'
           : 'bg-gradient-to-b from-black/50 to-transparent'
       }`}
     >
@@ -104,7 +104,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur border-t border-gray-200 py-4 space-y-4">
+          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-orange-100/60 py-4 space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}

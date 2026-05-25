@@ -13,19 +13,32 @@ import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <Hero />
-      <TravelerTypes />
-      <Destinations />
-      <TourPackages />
-      <Experiences />
-      <Gallery />
-      <Testimonials />
-      <Newsletter />
-      <BookingSection />
-      <Footer />
-      <WhatsAppButton />
+    <div className="page-background">
+      <div className="page-content">
+        <Header />
+        <Hero />
+        <svg
+          className="section-divider-wave block w-full -mt-px relative z-10"
+          viewBox="0 0 1440 48"
+          preserveAspectRatio="none"
+          aria-hidden
+        >
+          <path
+            fill="currentColor"
+            d="M0,32 C360,48 720,16 1080,32 C1260,40 1380,36 1440,28 L1440,48 L0,48 Z"
+          />
+        </svg>
+        <TravelerTypes />
+        <Destinations />
+        <TourPackages />
+        <Experiences />
+        <Gallery />
+        <Testimonials />
+        <Newsletter />
+        <BookingSection />
+        <Footer />
+        <WhatsAppButton />
+      </div>
     </div>
   );
 }

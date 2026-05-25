@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Clock, Users, MapPin, Star } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { Experience } from '../types';
@@ -53,8 +53,8 @@ export default function Experiences() {
 
   if (loading) {
     return (
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="section-surface section-warm">
+        <div className="section-inner text-center">
           <p className="text-gray-500">Loading experiences...</p>
         </div>
       </section>
@@ -62,8 +62,9 @@ export default function Experiences() {
   }
 
   return (
-    <section id="experiences" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experiences" className="section-surface section-warm">
+      <div className="section-blob-orange" aria-hidden />
+      <div className="section-inner">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -88,7 +89,7 @@ export default function Experiences() {
             return (
             <div
               key={exp.id}
-              className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all group"
+              className="glass-card rounded-xl overflow-hidden transition-all group"
             >
               {/* Image */}
               <div className="relative h-40 overflow-hidden bg-gray-200">

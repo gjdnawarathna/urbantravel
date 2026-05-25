@@ -43,8 +43,8 @@ export default function Destinations() {
 
   if (loading) {
     return (
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="section-surface section-cream">
+        <div className="section-inner text-center">
           <p className="text-gray-500">Loading destinations...</p>
         </div>
       </section>
@@ -52,8 +52,9 @@ export default function Destinations() {
   }
 
   return (
-    <section id="destinations" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="destinations" className="section-surface section-cream">
+      <div className="section-blob-amber" aria-hidden />
+      <div className="section-inner">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

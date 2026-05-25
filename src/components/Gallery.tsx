@@ -98,8 +98,10 @@ export default function Gallery() {
       : galleryImages.filter((img) => img.category === selectedCategory);
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section-surface section-cream">
+      <div className="section-blob-amber" aria-hidden />
+      <div className="section-blob-teal" aria-hidden />
+      <div className="section-inner">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -119,7 +121,7 @@ export default function Gallery() {
               className={`px-4 py-2 rounded-full font-semibold transition-all capitalize ${
                 selectedCategory === category
                   ? 'bg-orange-600 text-white'
-                  : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                  : 'bg-white/60 backdrop-blur text-gray-800 hover:bg-white/80 border border-orange-100/50'
               }`}
             >
               {category}

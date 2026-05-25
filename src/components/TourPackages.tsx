@@ -37,8 +37,10 @@ export default function TourPackages() {
   const packages = TOUR_PACKAGES;
 
   return (
-    <section id="tours" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="tours" className="section-surface section-teal">
+      <div className="section-blob-teal" aria-hidden />
+      <div className="section-blob-orange" aria-hidden />
+      <div className="section-inner">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -66,7 +68,7 @@ export default function TourPackages() {
             return (
             <div
               key={pkg.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 group cursor-pointer"
+              className="glass-card rounded-2xl overflow-hidden transition-all transform hover:scale-105 group cursor-pointer"
               onClick={() => setSelectedPackage(pkg)}
             >
               {/* Image */}
