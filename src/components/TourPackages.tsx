@@ -46,9 +46,6 @@ export default function TourPackages() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Tour Packages
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Handcrafted itineraries for every type of traveler
-          </p>
         </div>
 
         {/* Packages Grid */}
